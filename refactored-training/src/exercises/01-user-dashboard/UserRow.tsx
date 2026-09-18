@@ -1,4 +1,4 @@
-import { memo, useEffect } from 'react';
+import { memo } from 'react';
 import type { User } from './types';
 
 interface UserRowProps {
@@ -7,20 +7,17 @@ interface UserRowProps {
 }
 
 function UserRowImpl({ user, onToggleFavorite }: UserRowProps) {
-  
-
-    useEffect(() =>{
-        if(user){
-            console.log(`UserRow rendered for user: ${user.name}`)
-        }
-        
-    }, [user])
 
   return (
     <li className="user-row">
       <span>{user.name}</span>
-      <span className="email">{user?.email?.toLowerCase()}</span>
-      <button onClick={() => onToggleFavorite(user.id)}>
+      <span className="email">{user.email?.toLowerCase() ?? '-'}</span>
+      <button onClick={() => onToggleFavorite(user.id)} type='button' 
+        aria-pressed={user.isFavorite}
+        aria-label={
+          user.isFavorite ? `Remove ${user.name} from favorites` : `Add ${user.name} to favorites`
+        }
+      >
         {user.isFavorite ? '★' : '☆'}
       </button>
     </li>
