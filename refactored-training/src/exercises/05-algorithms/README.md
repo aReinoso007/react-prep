@@ -19,3 +19,11 @@ you use a map, a count, or a recursive walk.
 | `isAnagram` | generate permutations | sort O(n log n) or count O(n) |
 | `flattenTree` | — | DFS O(n) |
 | `groupAnagrams` | compare every pair | sort-key map O(n k log k) |
+| `isPalindrome` | build reversed string | two pointers O(n) |
+| `validParentheses` | — | stack O(n) |
+| `firstUniqueChar` | nested scan | count map + second pass |
+| `lengthOfLongestSubstring` | check every window | sliding window O(n) |
+| `maxProfit` | every pair | min-so-far O(n) |
+| `flattenArray` | — | DFS / stack O(n) |
+| `mergeSorted` | concat + sort | two pointers O(n + m) |
+| `chunk` | — | slice O(n) |

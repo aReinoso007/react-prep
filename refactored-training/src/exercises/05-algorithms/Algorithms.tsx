@@ -24,6 +24,30 @@ export function Algorithms() {
         <li>
           <code>groupAnagrams</code> — key by sorted word
         </li>
+        <li>
+          <code>isPalindrome</code> — two pointers after normalizing
+        </li>
+        <li>
+          <code>validParentheses</code> — stack of open brackets
+        </li>
+        <li>
+          <code>firstUniqueChar</code> — count, then second pass
+        </li>
+        <li>
+          <code>lengthOfLongestSubstring</code> — sliding window + set/map
+        </li>
+        <li>
+          <code>maxProfit</code> — track min price so far
+        </li>
+        <li>
+          <code>flattenArray</code> — recursion or a stack
+        </li>
+        <li>
+          <code>mergeSorted</code> — two pointers, no <code>sort</code>
+        </li>
+        <li>
+          <code>chunk</code> — slice in steps of <code>size</code>
+        </li>
       </ol>
       <TestRunner tests={algorithmTests} />
     </section>
